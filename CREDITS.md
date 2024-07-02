@@ -1,3 +1,3 @@
 # Credits
 
-Thanks to Iconshok and Icon-icons.com for the free drawing used in the logo.
+Thanks to Linnaea Mallette and PublicDomainPictures.net for the free drawing used in the logo.
