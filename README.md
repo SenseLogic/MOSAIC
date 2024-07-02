@@ -17,12 +17,30 @@ dmd -m64 mosaic.d color.d png.d
 ## Command line
 
 ```bash
-mosaic image.png mosaic.png OUTPUT/image_
+mosaic image.png mosaic.png OUT/image_
 ```
 
 ## Dependencies
 
 *   [ARSD PNG library](https://github.com/adamdruppe/arsd)
+
+## Sample
+
+Image :
+
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/image.png)
+
+Mosaic :
+
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/mosaic.png)
+
+Output :
+
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_1.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_2.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_3.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_4.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_5.png)
 
 ## Limitations
 

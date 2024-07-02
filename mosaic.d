@@ -476,7 +476,7 @@ void main(
     else
     {
         writeln( "Usage :" );
-        writeln( "    mosaic image.png mosaic.png OUTPUT/image_" );
+        writeln( "    mosaic image.png mosaic.png OUT/image_" );
 
         Abort( "Invalid arguments : " ~ argument_array.to!string() );
     }
