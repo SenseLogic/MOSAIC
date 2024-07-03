@@ -88,6 +88,18 @@ struct COLOR
         Blue,
         Opacity;
 
+    // -- INQUIRIES
+
+    bool IsValid(
+        )
+    {
+        return
+            ( Red != 0
+              || Green != 0
+              || Blue != 0 )
+            && Opacity == 255;
+    }
+
     // -- OPERATIONS
 
     void Clear(
@@ -168,22 +180,26 @@ class IMAGE
             foreach ( column_index; 0 .. ColumnCount )
             {
                 color = GetPixel( column_index, row_index );
-                rectange_was_found = false;
 
-                foreach ( rectangle; rectangle_array )
+                if ( color.IsValid() )
                 {
-                    if ( color == rectangle.Color )
+                    rectange_was_found = false;
+
+                    foreach ( rectangle; rectangle_array )
                     {
-                        rectangle.Extend( column_index, row_index );
-                        rectange_was_found = true;
+                        if ( color == rectangle.Color )
+                        {
+                            rectangle.Extend( column_index, row_index );
+                            rectange_was_found = true;
 
-                        break;
+                            break;
+                        }
                     }
-                }
 
-                if ( !rectange_was_found )
-                {
-                    rectangle_array ~= new RECTANGLE( color, column_index, row_index );
+                    if ( !rectange_was_found )
+                    {
+                        rectangle_array ~= new RECTANGLE( color, column_index, row_index );
+                    }
                 }
             }
         }

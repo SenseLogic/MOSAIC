@@ -2,7 +2,7 @@
 
 # Mosaic
 
-Image splitter.
+Color-based image splitter.
 
 ## Installation
 
@@ -41,6 +41,8 @@ Output :
 ![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_3.png)
 ![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_4.png)
 ![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_5.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_6.png)
+![](https://github.com/senselogic/MOSAIC/blob/master/TEST/OUT/image_7.png)
 
 ## Limitations
 
