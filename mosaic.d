@@ -94,9 +94,12 @@ struct COLOR
         )
     {
         return
-            ( Red != 0
-              || Green != 0
-              || Blue != 0 )
+            !( Red == 0
+               && Green == 0
+               && Blue == 0 )
+            && !( Red == 255
+                  && Green == 255
+                  && Blue == 255 )
             && Opacity == 255;
     }
 
